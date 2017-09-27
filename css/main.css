@@ -5,6 +5,9 @@ html {
 .masthead {
   background-image: url(../images/leaf-bg.svg);
   background-color: #588477;
+  background-size: 64px;
+  border-top: 3px solid #467366;
+  border-bottom: 3px solid #2d5a4d;
 }
 
 .logo {
@@ -27,15 +30,22 @@ html {
 }
 
 .nav a:hover {
-
+  color: #467366;
+  background-color: #fff;
+  background-image: url(../images/leaf-icon.svg);
+  background-size: 54px;
+  background-repeat: no-repeat;
+  border-image-slice: 0px .75em;
 }
 
 .banner {
-
+  background-image: url(../images/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .banner-content {
-
+  padding-top: 4em;
 }
 
 @media only screen and (min-width: 60em) {
