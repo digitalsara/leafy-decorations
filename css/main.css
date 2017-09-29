@@ -20,15 +20,15 @@ html {
 }
 
 .nav a {
-  background-color: #588477;
-  border: 4px solid #2d5a4d;
+  background-color: #467366;
+  border: 3px solid #2d5a4d;
   border-radius: 8px;
   color: #fff;
   text-decoration: none;
 }
 
 .nav a:hover {
-  color: #145b1b;
+  color: #145b1d;
   background-color: #fff;
   background-image: url("../images/leaf-icon.svg");
   background-size: 64px;
@@ -38,6 +38,7 @@ html {
 .banner {
   background-image: linear-gradient(to bottom, rgba(16, 52, 41, 0) 80%, rgba(16, 52, 41, .8)), url("../images/banner.jpg");
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
   background-color: #fff;
   color: #145b1b;
@@ -49,7 +50,17 @@ html {
   background-position: 1em 11em;
   background-repeat: no-repeat;
   color: #fff;
-  padding-top: 18.5em;
+  padding-top: 18.75em;
+}
+
+@media only screen and (min-width: 38em) {
+
+  .banner-content {
+    background-size: 5em;
+    background-position: .75em 10.75em;
+    padding-top: 17em;
+  }
+
 }
 
 @media only screen and (min-width: 60em) {
@@ -60,6 +71,25 @@ html {
 
   .nav {
     text-align: right;
+  }
+
+  .banner {
+    background-position: bottom;
+  }
+
+  .banner-content {
+    background-position: .75em 9.5em;
+    padding-top: 15.75em;
+  }
+
+}
+
+@media only screen and (min-width: 90em) {
+
+  .banner-content {
+    background-size: 4.5em;
+    background-position: .75em 8.5em;
+    padding-top: 14.35em;
   }
 
 }
